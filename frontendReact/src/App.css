@@ -1,0 +1,16 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+ */
+ 
+html, body {
+  height: 100%; /* Ensure the body takes up the full viewport height */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the start of the flex container (top) */
+  padding-top: 4%; /* Optional: Push content down from the top by a percentage */
+}
