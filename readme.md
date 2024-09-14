@@ -23,6 +23,11 @@ Develop a full-stack web application that indexes the "EpiRecipes" dataset into 
     ```sh
     docker-compose up 
     ```
+    * create an index in OpenSearch with **epi-recipes-index**
+    * from your cmd command line, run this cmd to ingest epi-search data set into OpenSearch
+    ```sh
+    curl -u admin:<password> -X POST "https://localhost:9200/_bulk" -H 'Content-Type: application/json' --data-binary @output_bulk.json
+    ```
 3. go to 'opensearchBackend/' folder and run
     ```sh
     pip install -r requirements.txt
@@ -36,7 +41,7 @@ Develop a full-stack web application that indexes the "EpiRecipes" dataset into 
 ---
 ## api documentation
 
-* '/api/search/' -- GET
+* **/api/search/** -- GET
     * for serving search results
     * query params:
         * q: search query
@@ -47,7 +52,7 @@ Develop a full-stack web application that indexes the "EpiRecipes" dataset into 
         * fat_min:   
         * page: int   
 
-* '/api/suggestion/' -- GET
+* **/api/suggestion/** -- GET
     * for search suggestions(auto complete)
     * query params:
         * q: search query
