@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchInput from './SearchInput';
 import SearchFilters from './SearchFilters';
@@ -41,12 +41,15 @@ const SearchForm = () => {
       console.error('Error fetching recipes:', error);
     }
   };
+  
   const pageNext = async () => {
-    setPage(page + 1);
+    setPage(prevPage => prevPage + 1);
+    // setPage(page + 1);
     handleSearch();
   }
   const pagePrev = async () => {
-    setPage(page - 1);
+    setPage(nextPage => nextPage - 1);
+    //setPage(page - 1);
     handleSearch();
   }
   return (

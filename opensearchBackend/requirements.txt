@@ -1,0 +1,3 @@
+Django
+opensearch-py
+django-cors-headers

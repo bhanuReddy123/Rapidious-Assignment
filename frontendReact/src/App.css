@@ -10,6 +10,8 @@ html, body {
   height: 100%; /* Ensure the body takes up the full viewport height */
   margin: 0; /* Remove default margin */
   display: flex;
+  padding: 0px, 20px;
+  margin: 40px;
   justify-content: center; /* Center content horizontally */
   align-items: flex-start; /* Align items to the start of the flex container (top) */
   padding-top: 4%; /* Optional: Push content down from the top by a percentage */
