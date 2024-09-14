@@ -8,7 +8,7 @@ Develop a full-stack web application that indexes the "EpiRecipes" dataset into 
 
 ## video Demo-walkthrough
 
-Uploading rapidious video demo (1) (online-video-cutter.com).mp4…
+[video](https://github.com/user-attachments/assets/a19bb99b-fced-41ca-83c1-c7fd37e77daa)
 
 ## Key Technologies used
 * OpenSearch
