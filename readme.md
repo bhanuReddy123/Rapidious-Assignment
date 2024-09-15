@@ -3,7 +3,7 @@
 ## Rapidious Internship Assignment: Recipe Search Application
 
 ### objective
-Develop a full-stack web application that indexes the "EpiRecipes" dataset into OpenSearch, provides a proof of working and  user-friendly interface for searching and filtering recipes, and demonstrates proficiency in React for frontend development, Python Django for backend development, and version control using GitHub.
+Develop an application that indexes the "EpiRecipes" dataset into OpenSearch, provides a proof of working and  user-friendly interface for searching and filtering recipes, and demonstrates proficiency in React for frontend development, Python Django for backend development, and version control using GitHub.
 
 
 ## video Demo-walkthrough
@@ -24,7 +24,7 @@ Develop a full-stack web application that indexes the "EpiRecipes" dataset into 
     ```sh
     docker-compose up 
     ```
-    * create an index in OpenSearch with **epi-recipes-index**
+    * create an index in OpenSearch with the name  **epi-recipes-index**
     * from your cmd command line, run this cmd to ingest epi-search data set into OpenSearch
     ```sh
     curl -u admin:<password> -X POST "https://localhost:9200/_bulk" -H 'Content-Type: application/json' --data-binary @output_bulk.json
